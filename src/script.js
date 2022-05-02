@@ -30,7 +30,7 @@ function displayTemperature(response)  {
   dateElement.innerHTML = formatDate(response.data.dt*1000);
   iconElement.setAttribute(
 "src", 
-`http://openweathermap.org/img/wn/$(response.data.weather[0].icon}@2x.png`
+`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
 );
 iconElement.setAttribute("alt", response.data.weather[0].description);
 }
@@ -38,8 +38,8 @@ iconElement.setAttribute("alt", response.data.weather[0].description);
 
 
 let apiKey="587288633b9601e0afcf6e1418dc6e13";
-let city = "Rome";
-let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=New York&appid=587288633b9601e0afcf6e1418dc6e13&units=metric`;
+let city = "Paris";
+let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=587288633b9601e0afcf6e1418dc6e13&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
 
