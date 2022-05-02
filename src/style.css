@@ -15,11 +15,11 @@ ul  {
     padding: 0; 
 }
 li  {
-     list-style: none;
+    list-style: none;
     color: #fc0356; 
     margin: 0;
     padding: 0;
-    text-transform: capitalize;
+    
     font-size: 16px;
     font-weight: 100;
     line-height: 19px; 
