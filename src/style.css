@@ -72,7 +72,7 @@ li:first-letter  {
   } 
   .weather-forecast-date  {
     font-size: 16px;
-    opacity: 0.5;
+    color: #1010b5;
   }
   .weather-forecast-temperature-min  {
     opacity: 0.5;   
